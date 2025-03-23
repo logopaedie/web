@@ -4034,7 +4034,7 @@ iframe {
   padding: 2rem 1rem;
   background: #fff;
   text-align: center;
-  height: 108px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -4116,21 +4116,8 @@ iframe {
   transform: translateY(0);
 }
 
-.team-content ul {
-  -webkit-transform: translateY(150%);
-  -moz-transform: translateY(150%);
-  -ms-transform: translateY(150%);
-  -o-transform: translateY(150%);
-  transform: translateY(150%);
-}
-
-.team-box:hover .team-content ul {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-  margin-top: 5px;
+.team-content ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .team-box:hover img {
