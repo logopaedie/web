@@ -801,7 +801,7 @@ jQuery(($) => {
 
   //main slider in pages
   $("#price-slider").owlCarousel({
-    items: 3,
+    items: 2,
     autoplay: false,
     loop: false,
     margin: 30,
@@ -809,14 +809,11 @@ jQuery(($) => {
     dots: true,
     nav: false,
     responsive: {
-      1280: {
-        items: 3,
-      },
       980: {
-        items: 3,
+        items: 2,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       0: {
         items: 1,
@@ -828,6 +825,7 @@ jQuery(($) => {
   $("#ourteam-slider").owlCarousel({
     items: 4,
     margin: 0,
+    loop: true,
     dots: true,
     nav: false,
     responsive: {
@@ -842,6 +840,8 @@ jQuery(($) => {
       },
       0: {
         items: 1,
+        autoplay: true,
+        autoplayTimeout: 10000,
       },
     },
   });

@@ -3818,6 +3818,14 @@ iframe {
   background: #f6f7f8;
 }
 
+#our-team.half-section-alt::before {
+  background: #fff;
+}
+
+#our-team {
+  padding-bottom: 6rem;
+}
+
 /*App Features ends*/
 
 /* Counters */
