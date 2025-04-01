@@ -4509,6 +4509,7 @@ h4.darkcolor {
 
 #testimonial-main-slider .owl-dot,
 #price-slider .owl-dot,
+#ourteam-slider .owl-dot,
 #ourteam-main-slider .owl-dot {
   width: 15px;
   height: 15px;
@@ -4521,6 +4522,7 @@ h4.darkcolor {
 
 #testimonial-main-slider .owl-dot::before,
 #price-slider .owl-dot::before,
+#ourteam-slider .owl-dot::before,
 #ourteam-main-slider .owl-dot::before {
   content: "";
   position: absolute;
@@ -4534,6 +4536,7 @@ h4.darkcolor {
 
 #testimonial-main-slider .active.owl-dot::before,
 #price-slider .active.owl-dot::before,
+#ourteam-slider .active.owl-dot::before,
 #ourteam-main-slider .active.owl-dot::before {
   transform: translateY(0);
 }
@@ -6331,27 +6334,12 @@ ul.count_down.white li p:nth-child(2) {
   font-size: 1.1rem;
 }
 
-.pricing-item.active {
-  background: #26313c;
-}
-
-.pricing-item.active .button {
-  border-color: #fff;
-  background: #26313c;
-  transition: 0.2s all;
-}
-
 .pricing-item .button {
   border-color: #fff;
   background: #24cdd5;
   color: #fff;
   display: table;
   margin: 0 auto;
-}
-
-.pricing-item.active,
-.pricing-item.active .darkcolor {
-  color: #fff;
 }
 
 .pricing-item .button:hover {
@@ -6428,9 +6416,6 @@ ul.count_down.white li p:nth-child(2) {
   top: 2px;
   left: -23px;
   color: #e84455;
-}
-.pricing-item.active .pricing-list li::before {
-  color: #fce619;
 }
 
 .price-toggle-wrapper {
