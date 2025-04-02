@@ -1962,6 +1962,14 @@ ul.links li a::before,
   width: 100%;
 }
 
+.logo-default {
+  width: 200px !important;
+}
+
+.logo-scrolled {
+  width: 150px !important;
+}
+
 .navbar.fixedmenu .logo-default,
 .navbar .logo-scrolled {
   display: none;
@@ -6407,7 +6415,7 @@ ul.count_down.white li p:nth-child(2) {
 
 .pricing-list li::before,
 .price-included::before {
-  content: "\f04d";
+  content: "\f1ce";
   font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
   position: absolute;
