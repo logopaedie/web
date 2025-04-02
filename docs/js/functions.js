@@ -576,7 +576,7 @@ jQuery(($) => {
       anchor: "bottom-right",
       offset: [0, 0],
       animation: "fade",
-      content: "Click Here To Close or Press ESC!",
+      content: "Zum Schließen hier klicken oder ESC drücken!",
       delay: 20,
       theme: "tooltipster-light",
       repositionOnScroll: true,
