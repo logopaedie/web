@@ -103,9 +103,9 @@ jQuery(($) => {
   let ratingText = $("#ratingText");
 
   let fadeInStarText = (n) => {
-    ratingText.addClass("scale-price");
+    ratingText.addClass("scale-therapyarea");
     setTimeout(function () {
-      ratingText.removeClass("scale-price");
+      ratingText.removeClass("scale-therapyarea");
       switch (n) {
         case 0:
           ratingText.text("Poor!");
@@ -623,29 +623,32 @@ jQuery(($) => {
   });
 
   /* =====================================
-                 Pricing duration toggle
+                 Therapyarea duration toggle
           ====================================== */
 
-  $(".Pricing-toggle-button").on("click", function () {
+  $(".Therapyarea-toggle-button").on("click", function () {
     var opt = true;
     if ($(this).hasClass("month")) {
       opt = false;
     }
     if (!$(this).hasClass("active")) {
-      $(".pricing-price .pricing-currency").each(function () {
-        let priceWithDollar = $(this).text();
-        let price = priceWithDollar.substring(1, priceWithDollar.length);
+      $(".therapyarea-therapyarea .therapyarea-currency").each(function () {
+        let therapyareaWithDollar = $(this).text();
+        let therapyarea = therapyareaWithDollar.substring(
+          1,
+          therapyareaWithDollar.length
+        );
         var discountOffer = 9;
         if (opt) {
-          price *= discountOffer;
+          therapyarea *= discountOffer;
         } else {
-          price /= discountOffer;
+          therapyarea /= discountOffer;
         }
-        price = price.toFixed(2);
-        let priceF = "$" + price;
-        fadeInPrice($(this), priceF);
+        therapyarea = therapyarea.toFixed(2);
+        let therapyareaF = "$" + therapyarea;
+        fadeInTherapyarea($(this), therapyareaF);
       });
-      $(".pricing-price .pricing-duration").each(function () {
+      $(".therapyarea-therapyarea .therapyarea-duration").each(function () {
         if (opt) {
           $(this).text("year");
         } else {
@@ -656,23 +659,23 @@ jQuery(($) => {
     }
   });
 
-  let fadeInPrice = (thisItem, priceText) => {
-    let pricingItem = $(".pricing-price");
-    pricingItem.addClass("scale-price");
+  let fadeInTherapyarea = (thisItem, therapyareaText) => {
+    let therapyareaItem = $(".therapyarea-therapyarea");
+    therapyareaItem.addClass("scale-therapyarea");
     setTimeout(function () {
-      thisItem.text(priceText);
-      pricingItem.removeClass("scale-price");
+      thisItem.text(therapyareaText);
+      therapyareaItem.removeClass("scale-therapyarea");
     }, 200);
   };
 
-  $(".pricing-item")
+  $(".therapyarea-item")
     .on("mouseenter", function () {
-      $(".pricing-item").removeClass("active");
+      $(".therapyarea-item").removeClass("active");
       $(this).addClass("active");
     })
     .on("mouseleave", function () {
-      $(".pricing-item").removeClass("active");
-      $(".pricing-item.selected").addClass("active");
+      $(".therapyarea-item").removeClass("active");
+      $(".therapyarea-item.selected").addClass("active");
     });
 
   /* =====================================
@@ -800,7 +803,7 @@ jQuery(($) => {
   });
 
   //main slider in pages
-  $("#price-slider").owlCarousel({
+  $("#therapyarea-slider").owlCarousel({
     items: 2,
     autoplay: false,
     loop: false,
@@ -1286,7 +1289,7 @@ jQuery(($) => {
   });
 
   /*Testimonials Grids*/
-  $("#price-grid").cubeportfolio({
+  $("#therapyarea-grid").cubeportfolio({
     layoutMode: "grid",
     defaultFilter: "*",
     animationType: "quicksand",

@@ -940,7 +940,7 @@ website:   	http://www.themepunch.com
 	text-decoration:none;
 }
 
-.tp-caption.Restaurant-Price,.Restaurant-Price
+.tp-caption.Restaurant-Therapyarea,.Restaurant-Therapyarea
 {
 	background-color:transparent;
 	border-color:transparent;
@@ -3550,8 +3550,8 @@ website:   	http://www.themepunch.com
         letter-spacing: 2px;
         
     }
-    .tp-caption.Woo-PriceLarge,
-    .Woo-PriceLarge {
+    .tp-caption.Woo-TherapyareaLarge,
+    .Woo-TherapyareaLarge {
         color: rgba(0, 0, 0, 1.00);
         font-size: 60px;
         line-height: 60px;
@@ -3661,8 +3661,8 @@ website:   	http://www.themepunch.com
         letter-spacing: 2px;
         
     }
-    .tp-caption.Woo-PriceLarge,
-    .Woo-PriceLarge {
+    .tp-caption.Woo-TherapyareaLarge,
+    .Woo-TherapyareaLarge {
         color: rgba(0, 0, 0, 1.00);
         font-size: 60px;
         line-height: 60px;
