@@ -88,7 +88,7 @@ jQuery(($) => {
       );
     } else {
       output =
-        '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Please provide the missing fields.</div>';
+        '<div class="alert-danger" style="padding:10px; margin-bottom:25px;">Bitte geben Sie mindestens ihren Namen, ihre Telefonnnummer und eine Nachricht an.</div>';
       result.slideUp("fast").html(output).slideDown();
     }
   });

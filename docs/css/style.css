@@ -4802,7 +4802,6 @@ textarea {
   -webkit-box-shadow: none;
   box-shadow: none;
   height: 41px;
-  color: #b6b8ba;
   font-size: 0.875rem;
 }
 
@@ -6925,4 +6924,8 @@ ul.latest_news li a:focus + span.defaultcolor {
 
 .training-box {
   padding: 20px 25px 20px 0px;
+}
+
+.form-select {
+  margin-bottom: 1rem;
 }
