@@ -1489,9 +1489,15 @@
                 <form
                   class="getin_form wow"
                   data-wow-delay="400ms"
-                  onsubmit="return false;"
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
                   style="visibility: visible"
                 >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="5c162833-ec35-4cdc-97ba-3c04c5e22360"
+                  />
                   <div class="row px-2">
                     <div class="col-md-12 col-sm-12" id="result1"></div>
                     <div class="col-md-12 col-sm-12">
@@ -1503,7 +1509,7 @@
                           type="tel"
                           placeholder="Telefonnummer"
                           required
-                          name="phoneNumber"
+                          name="telefon"
                         />
                       </div>
                       <div class="form-group">
@@ -1514,7 +1520,7 @@
                           type="text"
                           placeholder="Name"
                           required
-                          name="userName"
+                          name="name"
                         />
                       </div>
                     </div>
@@ -1538,26 +1544,24 @@
                       <select
                         class="form-select"
                         id="location"
-                        name="location"
+                        name="ort"
                         class="form-control"
                       >
                         <option value="andere_anfrage" disabled selected>
                           Andere Anfrage
                         </option>
-                        <option value="buehl_anfrage">
-                          Terminanfrage für Bühl
-                        </option>
-                        <option value="sasbach_anfrage">
+                        <option value="buehl">Terminanfrage für Bühl</option>
+                        <option value="sasbach">
                           Terminanfrage für Sasbach
                         </option>
-                        <option value="buehl_oder_sasbach_anfrage">
+                        <option value="egal">
                           Terminanfrage für Bühl oder Sasbach
                         </option>
                       </select>
                       <select
                         class="form-select"
                         id="time"
-                        name="time"
+                        name="zeit"
                         class="form-control"
                       >
                         <option value="" disabled selected>
@@ -1577,7 +1581,7 @@
                           id="message1"
                           placeholder="Ihre Nachricht an uns"
                           required
-                          name="message"
+                          name="nachricht"
                         ></textarea>
                       </div>
                     </div>
@@ -1589,11 +1593,16 @@
                         Termin mindestens 24 Stunden im Voraus absagen.
                       </p>
                       <p>
-                        Mit dem Absenden des Kontaktformulars stimmen Sie zu,
-                        dass Ihre Angaben aus dem Kontaktformular zur
-                        Beantwortung Ihrer Anfrage erhoben und verarbeitet
-                        werden. Sie können Ihre Einwilligung jederzeit für die
-                        Zukunft per E-Mail an
+                        Mit dem Absenden des Formulars erkläre ich mich damit
+                        einverstanden, dass meine Angaben zur Beantwortung
+                        meiner Anfrage verarbeitet und über Web3Forms
+                        übermittelt werden. Weitere Informationen finden Sie in
+                        der Datenschutzerklärung.” Mit dem Absenden des
+                        Kontaktformulars stimmen Sie zu, dass Ihre Angaben aus
+                        dem Kontaktformular zur Beantwortung Ihrer Anfrage von
+                        uns erhoben und verarbeitet werden. Sie können Ihre
+                        Einwilligung für uns jederzeit für die Zukunft per
+                        E-Mail an
                         <a href="mailto:info@logopaedie-boras-kiene.de"
                           >info@logopaedie-boras-kiene.de</a
                         >
