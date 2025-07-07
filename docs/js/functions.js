@@ -843,7 +843,7 @@ jQuery(($) => {
       },
       0: {
         items: 1,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 10000,
       },
     },
