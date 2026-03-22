@@ -2396,13 +2396,21 @@ a.dropdown-toggle::after {
   height: 100vh;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  -webkit-transition: transform 0.5s ease-in-out,
-    -webkit-transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out,
+  -webkit-transition:
+    transform 0.5s ease-in-out,
+    -webkit-transform 0.5s ease-in-out,
     -o-transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out,
-    -webkit-transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out,
+  -o-transition:
+    transform 0.5s ease-in-out,
+    -webkit-transform 0.5s ease-in-out,
+    -o-transform 0.5s ease-in-out;
+  -moz-transition:
+    transform 0.5s ease-in-out,
+    -webkit-transform 0.5s ease-in-out,
+    -o-transform 0.5s ease-in-out;
+  transition:
+    transform 0.5s ease-in-out,
+    -webkit-transform 0.5s ease-in-out,
     -o-transform 0.5s ease-in-out;
   overflow: hidden;
 }
@@ -3993,7 +4001,7 @@ iframe {
   padding: 2rem 1rem;
   background: #fff;
   text-align: center;
-  height: 350px;
+  height: 370px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -4402,7 +4410,9 @@ h4.darkcolor {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: -2;
-  transition: top 0.4s linear, transform 0.6s ease 0.2s;
+  transition:
+    top 0.4s linear,
+    transform 0.6s ease 0.2s;
 }
 
 .testimonial-wrapp:hover .testimonial-text::before {
@@ -4868,9 +4878,15 @@ span.icon-contact {
   border-radius: 0;
   text-align: center;
   color: transparent;
-  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -webkit-transition:
+    border 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+  -o-transition:
+    border 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+  transition:
+    border 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
 
 .form-check input[type="checkbox"]:checked + label::before {
